@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>universidad politicnica</title>
+</head>
+<body class="uno">
+
+    <div class="inicio">
+        <h1>Bienvenido a la universidad politecnica de san josé de costa rica</h1>
+
+    <h2>eres un </h2>
+    <button class="nuevo" onclick="nuevo_estudiante()">
+        nuevo estudiante
+    </button>
+    <h2>
+        o
+    </h2>
+    <button class="registro" onclick="registro()">
+          ya te as registrado antes 
+    </button> 
+   
+
+    
+     
+      <div id="registro_1">
+            <h1>Registrate con tu </h1>
+            <h2>nombre</h2>
+            <input type="text" id="nombre_1" placeholder="escribe tu nombre" class="escribir">
+            <br>
+            <h2>apellido</h2>
+            <input type="text" id="apellido_1" placeholder="escribe tu apellido" class="escribir">
+            <br>
+            <h2>edad</h2>
+            <input type="number" id="edad_1" placeholder="escribe tu edad" class="escribir">
+            <br>
+            <h1>y a que asisnatura quisieras estudiar</h1>
+             <label for="agsinatura_español" class="agsinaturas">español</label>
+            <input type="checkbox" id="agsinatura_español" class="checke">
+            <br>
+            <label for="agsinatura_mateticas" class="agsinaturas">matematicas</label>
+            <input type="checkbox" id="agsinatura_mateticas" class="checke">
+            <br>
+            <label for="agsinatura_ciencias" class="agsinaturas">ciencias</label>
+            <input type="checkbox" id="agsinatura_ciencias" class="checke">
+            <br>
+            <label for="agsinatura_sociales" class="agsinaturas">estudios sociales</label>
+            <input type="checkbox" id="agsinatura_sociales" class="checke">
+               <br>
+               <br>
+            <button class="btn_registro"> 
+             <a href="pagina_principal.html" class="link_1">registrarse</a> 
+            </button>
+
+      </div>
+
+      <div id="inicioDesecion_1">
+       <h1>bienvenido de nuevo</h1>
+       <h2>escribe tu nombre</h2>
+       <input type="text" id="nombre_2" placeholder="escribe tu nombre" class="escribir">
+      <h2>escribe tu apellido </h2> 
+        <input type="text" id="apellido_2" placeholder="escribe tu apellido"class="escribir">
+        <h2>y escribe  tu edad</h2>
+        <input type="number"  id="edad_2" placeholder="escribe tu edad"class="escribir">
+        <br>
+        <br>
+        <button class="inicio_de_secion ">
+           <a href="pagina_principal.html" class="link_1">inicio de secion</a> 
+        </button>
+      </div>
+  </div>    
+    <script src="app.js"></script>
+</body> 
+</html>
