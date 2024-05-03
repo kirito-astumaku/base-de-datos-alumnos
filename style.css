@@ -68,6 +68,12 @@
         padding: 1%;
         display: none;
         transition: 2s;
+        color: black;
+        position: absolute;
+        right: 0;
+        text-align: center;
+         width: 76%;
+        height: 100%;
     }
 
     .escribir{
@@ -117,6 +123,12 @@
     #inicioDesecion{
         display:none;
         padding: 2%;
+        olor: black;
+        position: absolute;
+        right: 0;
+        text-align: center;
+         width: 76%;
+        height: 100%;
     }
 
     .inicio_de_secion{
