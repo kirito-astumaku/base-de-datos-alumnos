@@ -59,12 +59,12 @@ class Linkedlist{
         let linkedliststring = ''
         let current = this.head
         while(true){
-           if(current == null){
+           if(current == null)
             break
-
-            linkedliststring += `${current.data} ->`
-            current = current.next
-           }
+           
+            
+             linkedliststring += `${current.data} ->` 
+             current = current.next
         }
 
         return linkedliststring = linkedliststring + 'null'
@@ -73,12 +73,12 @@ class Linkedlist{
 
      searchIFExist(data){
         let current = this.head
-        while(current.data !== data && current.next !== null){
+        while(current !== null && current.data !== data){
              current = current.next
         }
 
         return current !== null
-    } 
+    }  
 }
 
 
@@ -92,11 +92,13 @@ linkedlist.insert(4)
 
 console.log(linkedlist)
 
-linkedlist.delete(2)
+linkedlist.delete()
 
 console.log(linkedlist)
 
-console.log(linkedlist.print())
+console.log(linkedlist.print()) 
+console.log(linkedlist.searchIFExist(3));
+console.log(linkedlist.searchIFExist(5));
 
 
 
