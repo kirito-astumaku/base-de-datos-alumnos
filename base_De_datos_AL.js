@@ -98,8 +98,7 @@ console.log(linkedlist)
 
 console.log(linkedlist.print()) 
 console.log(linkedlist.searchIFExist(3));
-console.log(linkedlist.searchIFExist(5));
-
+console.log(linkedlist.searchIFExist(5)
 
 
 
