@@ -47,15 +47,35 @@
     <h2>apellido</h2>
     <input type="text" id="apellido_1" placeholder="escribe tu apellido" class="escribir">
     <br>
+    <h2>fecha de nacimiento</h2>
+    <input type="date" id="nacimiento _1" placeholder="escribe tu fecha" class="escribir">
+    <br>
     <h2>edad</h2>
     <input type="number" id="edad_1" placeholder="escribe tu edad" class="escribir">
     <br>
     <h1>y a que asisnatura quisieras estudiar</h1>
-     
-    <h2>en nuestra universidad tenesmos "matematicas","ciencias","español","estudios sociales","quimica","informatica",</h2>
-       <input type="text" placeholder="elige tu asisgnatura" class="escribir" id="asisgnatura_V2">
-       <br>
-       <br>
+    <label for="agsinatura_español" class="agsinaturas">español</label>
+   <input type="checkbox" id="agsinatura_v2" class="checke" name="materia"  value="español">
+   <br>
+   <label for="agsinatura_mateticas" class="agsinaturas">matematicas</label>
+   <input type="checkbox" id="agsinatura_v3" class="checke" name="materia"  value="Matematicas">
+   <br>
+   <label for="agsinatura_ciencias" class="agsinaturas">ciencias</label>
+   <input type="checkbox" id="agsinatura_v4" class="checke" name="materia"  value="ciencias">
+   <br>
+   <label for="agsinatura_sociales" class="agsinaturas">estudios sociales</label>
+   <input type="checkbox" id="agsinatura_v5" class="checke" name="materia" value="estudios sociales">
+      <br>
+      <label for="agsinatura_sociales" class="agsinaturas">informatica</label>
+   <input type="checkbox" id="agsinatura_v5" class="checke" name="materia" value="informatica">
+      <br>
+      <label for="agsinatura_sociales" class="agsinaturas">quimica</label>
+   <input type="checkbox" id="agsinatura_v5" class="checke" name="materia" value="quimica">
+      <br>
+      <label for="agsinatura_sociales" class="agsinaturas">geografia</label>
+   <input type="checkbox" id="agsinatura_v5" class="checke" name="materia" value="geografia">
+      <br>
+      <br>
        <h1 id="error"></h1>
        <button class="btn_registro" onclick="btn_Registro()" >
         registro
@@ -81,19 +101,46 @@
    </div>  
       
    <div id="registro_12">
-        <h1>bienvenido</h1>
-        <h2 id="nombre_3"></h2>
-        <h1>de la clase</h1>
-        <h2 id="seccion"></h2>  
+     <table>
+      <h1>biendenvido de nuevo</h1>
+
+       <tr>
+        <th><h3>nombre</h3></th>
+         <th><h3 id="nombre_3"></h3></th>
+      </tr>
+
+       <tr>
+         <td><h3>apellido</h3></td>
+         <td><h3 id="apellido_3"></h3></td>
+       </tr>
+
+       <tr>
+        <td><h3>fecha de nacimiento</h3></td>
+        <td><h3 id="fecha"></h3></td>
+       </tr>
+
+       <tr>
+        <td><h3>edad</h3></td>
+        <td><h3 id="error_1"></h3></td>
+       </tr>
+
+       <tr>
+        <td><h3>seccion</h3></td>
+        <td><h3 id="seccion"></h3></td>
+       </tr>
+
+       <tr>
+        <td><h3>agsinatura</h3></td>
+        <td><h3 id="asisgnatura_3"></h3></td>
+       </tr>
+
+     </table>
+          
       </div>
 
 </div>
-
-
-
-
-
 <script src="app.js"></script>
 <script src="base_De_datos_AL.js"></script>
 </body>
 </html>
+

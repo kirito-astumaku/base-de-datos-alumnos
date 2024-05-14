@@ -184,6 +184,7 @@ let linkedlist = new Linkedlist()
 
 
 
+
 /* 
 let nombre_3 = document.getElementById('nombre_3')
 let seccion =  document.getElementById('seccion')
