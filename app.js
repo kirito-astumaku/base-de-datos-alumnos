@@ -31,6 +31,9 @@ let Nombre = document.getElementById('nombre_1').value
 let Apellido = document.getElementById('apellido_1').value
 let edad = document.getElementById('edad_1').value 
 let nacimiento = document.getElementById('nacimiento _1').value
+var numeroEntre1y100 = Math.floor(Math.random() * 5) + 1;
+var numeroEntre1y100_1 = Math.floor(Math.random() * 5) + 1;
+let seccioneS = [`${numeroEntre1y100} - ${numeroEntre1y100_1} `]
 
 
 if( document.getElementById('edad_1').value  >=1 && document.getElementById('edad_1').value<=50  ){
@@ -44,17 +47,16 @@ if( document.getElementById('edad_1').value  >=1 && document.getElementById('eda
                 }
         }
         console.log(checkedOptions[0])
-
-
-    var alnnos = [
-        Nombre,
-        Apellido,
-        edad,
-        checkedOptions[0],
-        nacimiento
-    ]
+        var alnnos = [
+            Nombre,
+            Apellido,
+            edad,
+            checkedOptions[0],
+            nacimiento
+        ]
+        
     linkedlist.insert(alnnos)
-    console.log(alnnos[3])
+    console.log(alnnos)
     console.log(noMbre);
     var noMbre = alnnos[0]
     var materia = alnnos[3]
@@ -69,17 +71,32 @@ if( document.getElementById('edad_1').value  >=1 && document.getElementById('eda
     asisgnatura_3.textContent = materia
     error_1.textContent = eDad
     fecha.textContent = fechanacido
-    var numeroEntre1y100 = Math.floor(Math.random() * 5) + 1;
-    var numeroEntre1y100_1 = Math.floor(Math.random() * 5) + 1;
+   
     seccion.innerHTML = `${numeroEntre1y100} - ${numeroEntre1y100_1} ` 
+    console.log(linkedlist)
+    console.log(seccioneS);
 } else{
-    erroR.innerHTML = 'tienes que eligir un asignatura'
+    erroR.innerHTML = 'falta una un campo por llenar'
 }
      
     
     
 
 }
+
+
+
+function cerrrar_sesion() {
+ document.getElementById('nombre_1').value = ''
+ document.getElementById('apellido_1').value = ''
+ document.getElementById('edad_1').value = '' 
+ document.getElementById('nacimiento _1').value = ''
+ document.getElementById('registro_12').style.display = 'none'
+    document.getElementById('registro_1').style.display = 'block'
+    document.getElementById('btno').style.display = 'block'
+}
+
+
 
 
 

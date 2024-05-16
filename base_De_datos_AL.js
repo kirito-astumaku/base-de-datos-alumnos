@@ -86,7 +86,7 @@ class Linkedlist{
 let linkedlist = new Linkedlist()
 
 
-
+console.log(linkedlist)
 
 
 
