@@ -10,20 +10,20 @@
    
 <div class="inici_2">
     <div class="botones">
-        <button class="liks">inicio</button>
+        <button class="liks"  id="Inicio" onclick="inicio()" >inicio</button>
         <br>
         <br>
-        <button class="liks">calificaciones</button>
+        <button class="liks"  id="Calificaciones" onclick="calificaciones()">calificaciones</button>
         <br>
         <br>
-        <button class="liks">alula</button>
+        <button class="liks"  id="Grupo" onclick="grupo()" >grupo</button>
         <br>
         <br>
-        <button class="liks">grupo</button>  
+        <button class="liks"  id="Perfil" onclick="perfil()">perfil</button>  
      </div>  
      
      <div class="perfil_links">
-        <button class="links" onclick="perfil()">perfil</button>
+        
           <button class="links" onclick="cerrrar_sesion() ">cerrar secion</button>
       
   </div>
@@ -137,12 +137,42 @@
        </tr>
 
      </table>
-          
-     <div id="registro_13">
-        
-     </div>
       </div>
 
+      <div id="registrO">
+         <h1 class="lista_unO">lista de los estudiantes</h1>
+         <h1 id="nombre_del_grupo"></h1>
+         <div class="lista_uno">
+          <ol class="lista_unO">
+              <li><h2 id="nombre_lista"></h2></li>
+              <li><h2>Roberto alias</h2></li>
+              <li><h2>Eduar castor</h2></li>
+              <li><h2>Elias montares</h2></li>
+              <li><h2>jose pablo</h2></li>
+              <li><h2>santiago roque</h2></li>
+              <li><h2>matias valillas</h2></li>
+              <li><h2>juan pablo</h2></li>
+              <li><h2>josue quesada</h2></li>
+              <li><h2> segio ramires</h2></li>
+         </ol>
+
+         
+         </div>
+         <h1 class="text_li_dos">lista de ausencias</h1>
+         <ol class="lista_doS">
+            <li><h2>0</h2></li>
+            <li><h2>2</h2></li>
+            <li><h2>3</h2></li>
+            <li><h2>0</h2></li>
+            <li><h2>0</h2></li>
+            <li><h2>6</h2></li>
+            <li><h2>8</h2></li>
+            <li><h2>0</h2></li>
+            <li><h2>1</h2></li>
+            <li><h2>2</h2></li>
+       </ol>
+         
+      </div>
 </div>
 <script src="app.js"></script>
 <script src="base_De_datos_AL.js"></script>
