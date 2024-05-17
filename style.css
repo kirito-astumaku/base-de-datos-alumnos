@@ -68,7 +68,7 @@
         height: 75%;
         text-align: center;
         display:none ;
-
+       /*  background-image: linear-gradient(rgba(137, 43, 226, 0.822),rgba(0, 0, 255, 0.822)); */
     }
 
     .btno{
@@ -104,6 +104,7 @@
         height: 100%;
         text-align: center;
         display: none;
+        /* background-image: linear-gradient(rgba(137, 43, 226, 0.822),rgba(0, 0, 255, 0.822)); */
     }
 
     .inicio_de_secion{
@@ -225,5 +226,16 @@
         left: 0;
         position: absolute;
         top: 0;
+    }
+
+    #registro_13{
+        position: absolute;
+        right: 0;
+        top: 1%;
+        width: 75%;
+        height: 75%;
+        text-align: center;
+        display:none ;
+       
     }
     

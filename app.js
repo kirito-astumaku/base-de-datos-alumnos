@@ -25,11 +25,10 @@ let apellido_3 = document.getElementById('apellido_3')
 let erroR = document.getElementById('error')
 let fecha = document.getElementById('fecha')
 
-    
+let edad = document.getElementById('edad_1').value     
 function btn_Registro(){
 let Nombre = document.getElementById('nombre_1').value
 let Apellido = document.getElementById('apellido_1').value
-let edad = document.getElementById('edad_1').value 
 let nacimiento = document.getElementById('nacimiento _1').value
 var numeroEntre1y100 = Math.floor(Math.random() * 5) + 1;
 var numeroEntre1y100_1 = Math.floor(Math.random() * 5) + 1;
@@ -63,7 +62,6 @@ if( document.getElementById('edad_1').value  >=1 && document.getElementById('eda
     let apellidO = alnnos[1]
     let eDad = alnnos[2]
     let fechanacido = alnnos[4]
-    document.getElementById('registro_12').style.display = 'block'
     document.getElementById('registro_1').style.display = 'none'
     document.getElementById('btno').style.display = 'none'
     nombre_3.textContent = noMbre
@@ -87,16 +85,27 @@ if( document.getElementById('edad_1').value  >=1 && document.getElementById('eda
 
 
 function cerrrar_sesion() {
+    if( document.getElementById('edad_1').value  >=1 && document.getElementById('edad_1').value<=50  ){
  document.getElementById('nombre_1').value = ''
  document.getElementById('apellido_1').value = ''
  document.getElementById('edad_1').value = '' 
  document.getElementById('nacimiento _1').value = ''
- document.getElementById('registro_12').style.display = 'none'
-    document.getElementById('registro_1').style.display = 'block'
-    document.getElementById('btno').style.display = 'block'
+document.getElementById('registro_12').style.display = 'none'
+document.getElementById('registro_1').style.display = 'block'
+document.getElementById('btno').style.display = 'block'
+}
 }
 
+function perfil(){
+    if( document.getElementById('edad_1').value  >=1 && document.getElementById('edad_1').value<=50){
+    document.getElementById('registro_12').style.display = 'block'
+}
 
+}
+
+function grupo(){
+    document.getElementById('registro_12').style.display = 'block'
+}
 
 
 
