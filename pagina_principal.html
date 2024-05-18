@@ -8,7 +8,7 @@
 </head>
 <body>
    
-<div class="inici_2">
+<div class="inici_2" id="inici_2">
     <div class="botones">
         <button class="liks"  id="Inicio" onclick="inicio()" >inicio</button>
         <br>
@@ -28,7 +28,7 @@
       
   </div>
       <div class="btno" id="btno">
-     <button class="btn_registro" onclick="btnregistro()" > 
+     <button class="btn_registro" onclick="registro_btn5234()" > 
     registrarse
      </button>
      <label for="">o</label>
@@ -54,18 +54,12 @@
     <input type="number" id="edad_1" placeholder="escribe tu edad" class="escribir">
     <br>
     <h1>y a que asisnatura quisieras estudiar</h1>
-    <label for="agsinatura_español" class="agsinaturas">español</label>
-   <input type="checkbox" id="agsinatura_v2" class="checke" name="materia"  value="español">
-   <br>
    <label for="agsinatura_mateticas" class="agsinaturas">matematicas</label>
    <input type="checkbox" id="agsinatura_v3" class="checke" name="materia"  value="Matematicas">
    <br>
    <label for="agsinatura_ciencias" class="agsinaturas">ciencias</label>
    <input type="checkbox" id="agsinatura_v4" class="checke" name="materia"  value="ciencias">
    <br>
-   <label for="agsinatura_sociales" class="agsinaturas">estudios sociales</label>
-   <input type="checkbox" id="agsinatura_v5" class="checke" name="materia" value="estudios sociales">
-      <br>
       <label for="agsinatura_sociales" class="agsinaturas">informatica</label>
    <input type="checkbox" id="agsinatura_v5" class="checke" name="materia" value="informatica">
       <br>
@@ -85,19 +79,24 @@
 
     <div id="inicioDesecion_1">
         <h1>bienvenido de nuevo</h1>
-        <h2>escribe tu nombre</h2>
-        <input type="text" id="nombre_2" placeholder="escribe tu nombre" class="escribir">
-       <h2>escribe tu apellido </h2> 
-         <input type="text" id="apellido_2" placeholder="escribe tu apellido"class="escribir">
-         <h2>y escribe  tu edad</h2>
-         <input type="number"  id="edad_2" placeholder="escribe tu edad"class="escribir">
-         <br>
-         <br>
+        <label for="username">Nombre de usuario:</label>
+        <input type="text" id="username" name="username" required class="escribir">
+        <br><br>
+        <label for="password">edad:</label>
+        <input type="password" id="password" name="password" required class="escribir">
+        <br><br>
          <button class="inicio_de_secion " onclick="btn_inicio()">
             inicio de secion
          </button>
          <h1 id="bien"></h1>
        </div>
+   </div>
+
+   <div id="casa">
+       <h1>biendenido de nuevo</h1>
+       
+     </div>
+     </div> 
    </div>  
       
    <div id="registro_12">
@@ -145,6 +144,7 @@
          <div class="lista_uno">
           <ol class="lista_unO">
               <li><h2 id="nombre_lista"></h2></li>
+              <hr>
               <li><h2>Roberto alias</h2></li>
               <li><h2>Eduar castor</h2></li>
               <li><h2>Elias montares</h2></li>
@@ -172,6 +172,66 @@
             <li><h2>2</h2></li>
        </ol>
          
+      </div>
+
+
+      <div id="calificafiones_1">
+           <div class="calfi">
+         <Table>
+            <tr>
+               <th><h2>asisnatura</h2></th>
+               <th><h2>tareas</h2></th>
+               <th><h2>asistncia</h2></th>
+               <th><h2>trabajos</h2></th>
+               <th><h2>examenes</h2></th>
+               <th><h2> total </h2></th>
+            </tr>
+            <tr>
+               <td><h2 id="materia_asignada"></h2></td>
+               <td><h2 id="li_1">0%</h2></td>
+               <td><h2 id="li_2">0%</h2></td>
+               <td><h2 id="li_3">0%</h2></td>
+               <td><h2 id="li_4">0%</h2></td>
+               <td><h2 id="li_5">0%</h2></td>
+            </tr>
+         </Table>
+        </div>
+              
+        
+        
+
+        <div class="nom_stui">
+         <h2>Estudiante</h2>
+         <h2 id="nombre_estudiante"></h2>
+         <h2 id="reporbaste"></h2>
+        </div>
+
+         <div class="operacionnes">
+               <h2>escribe tus resultados</h2>
+               <h2>tareas</h2>
+                <input type="number" id="numeros_para_nota_1" class="escribir" placeholder="validas entre el 1 y 10">
+               <h2>asistncia</h2>
+                <input type="number" id="numeros_para_nota_2" class="escribir" placeholder="validas entre el 1 y 10">
+               <h2>trabajos</h2>
+                <input type="number" id="numeros_para_nota_3" class="escribir" placeholder="validas entre el 1 y 45">
+                <h2>examenes</h2>
+                <input type="number" id="numeros_para_nota_4" class="escribir" placeholder="validas entre el 1 y 35">
+                <br>
+                <br>
+                <h2 id="error_de_escritora"></h2>
+                <button class="btn_registro_1" onclick="datos_notas()">
+                  enviar
+                </button>
+         </div>
+
+         <div class="los_mejores">
+            <h2>los mejores estudiantes</h2>
+            <ol>
+               <li><h2 id="li_Mejor_1"></h2></li>
+               <li><h2 id="li_Mejor_2"></h2></li>
+               <li><h2 id="li_Mejor_3"></h2></li>
+            </ol>
+         </div>
       </div>
 </div>
 <script src="app.js"></script>
