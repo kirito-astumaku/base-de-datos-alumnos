@@ -8,40 +8,234 @@
 </head>
 <body>
    
-<div class="inici_2">
+<div class="inici_2" id="inici_2">
     <div class="botones">
-        <button class="liks">inicio</button>
+        <button class="liks"  id="Inicio" onclick="inicio()" >inicio</button>
         <br>
         <br>
-        <button class="liks">trabajos</button>
+        <button class="liks"  id="Calificaciones" onclick="calificaciones()">calificaciones</button>
         <br>
         <br>
-        <button class="liks">grupo</button>
+        <button class="liks"  id="Grupo" onclick="grupo()" >grupo</button>
         <br>
         <br>
-        <button class="liks">más info</button>  
+        <button class="liks"  id="Perfil" onclick="perfil()">perfil</button>  
      </div>  
      
-     <div >
-        <button class="links">perfil</button>
+     <div class="perfil_links">
         
+          <button class="links" onclick="cerrrar_sesion() ">cerrar secion</button>
+      
+  </div>
+      <div class="btno" id="btno">
+     <button class="btn_registro" onclick="registro_btn5234()" > 
+    registrarse
+     </button>
+     <label for="">o</label>
+     <button class="btn_registro" onclick="bntinicio()"> 
+     ingresar
+     </button>
      </div>
 
-     <div class="padresPo">
-        <div id="INICIO">
-              <h1>bienvinido</h1>
-              <h1></h1>
-              <h1></h1>
-              <h1>que tal tu dia </h1>
-    
-              <h1>revisa tu grupo talvez hay algo nuevo </h1>
-         </div>
+
+
+  <div id="registro_1">
+    <h1>Registrate con tu </h1>
+    <h2>nombre</h2>
+    <input type="text" id="nombre_1" placeholder="escribe tu nombre" class="escribir">
+    <br>
+    <h2>apellido</h2>
+    <input type="text" id="apellido_1" placeholder="escribe tu apellido" class="escribir">
+    <br>
+    <h2>fecha de nacimiento</h2>
+    <input type="date" id="nacimiento _1" placeholder="escribe tu fecha" class="escribir">
+    <br>
+    <h2>edad</h2>
+    <input type="number" id="edad_1" placeholder="escribe tu edad" class="escribir">
+    <br>
+    <h1>y a que asisnatura quisieras estudiar</h1>
+   <label for="agsinatura_mateticas" class="agsinaturas">matematicas</label>
+   <input type="checkbox" id="agsinatura_v3" class="checke" name="materia"  value="Matematicas">
+   <br>
+   <label for="agsinatura_ciencias" class="agsinaturas">ciencias</label>
+   <input type="checkbox" id="agsinatura_v4" class="checke" name="materia"  value="ciencias">
+   <br>
+      <label for="agsinatura_sociales" class="agsinaturas">informatica</label>
+   <input type="checkbox" id="agsinatura_v5" class="checke" name="materia" value="informatica">
+      <br>
+      <label for="agsinatura_sociales" class="agsinaturas">quimica</label>
+   <input type="checkbox" id="agsinatura_v5" class="checke" name="materia" value="quimica">
+      <br>
+      <label for="agsinatura_sociales" class="agsinaturas">geografia</label>
+   <input type="checkbox" id="agsinatura_v5" class="checke" name="materia" value="geografia">
+      <br>
+      <br>
+       <h1 id="error"></h1>
+       <button class="btn_registro" onclick="btn_Registro()" >
+        registro
+     </button>
     </div>
+
+
+    <div id="inicioDesecion_1">
+        <h1>bienvenido de nuevo</h1>
+        <label for="username">Nombre de usuario:</label>
+        <input type="text" id="username" name="username" required class="escribir">
+        <br><br>
+        <label for="password">edad:</label>
+        <input type="password" id="password" name="password" required class="escribir">
+        <br><br>
+         <button class="inicio_de_secion " onclick="btn_inicio()">
+            inicio de secion
+         </button>
+         <h1 id="bien"></h1>
+       </div>
+   </div>
+
+   <div id="casa">
+       <h1>biendenido de nuevo</h1>
+       
+     </div>
+     </div> 
+   </div>  
+      
+   <div id="registro_12">
+
+      <h3 class="perfil">perfil</h3>
+     <table>
+      <h1>biendenvido de nuevo</h1>
+
+       <tr>
+        <th><h3>nombre</h3></th>
+         <th><h3 id="nombre_3"></h3></th>
+      </tr>
+
+       <tr>
+         <td><h3>apellido</h3></td>
+         <td><h3 id="apellido_3"></h3></td>
+       </tr>
+
+       <tr>
+        <td><h3>fecha de nacimiento</h3></td>
+        <td><h3 id="fecha"></h3></td>
+       </tr>
+
+       <tr>
+        <td><h3>edad</h3></td>
+        <td><h3 id="error_1"></h3></td>
+       </tr>
+
+       <tr>
+        <td><h3>seccion</h3></td>
+        <td><h3 id="seccion"></h3></td>
+       </tr>
+
+       <tr>
+        <td><h3>agsinatura</h3></td>
+        <td><h3 id="asisgnatura_3"></h3></td>
+       </tr>
+
+     </table>
+      </div>
+
+      <div id="registrO">
+         <h1 class="lista_unO">lista de los estudiantes</h1>
+         <h1 id="nombre_del_grupo"></h1>
+         <div class="lista_uno">
+          <ol class="lista_unO">
+              <li><h2 id="nombre_lista"></h2></li>
+              <hr>
+              <li><h2>Roberto alias</h2></li>
+              <li><h2>Eduar castor</h2></li>
+              <li><h2>Elias montares</h2></li>
+              <li><h2>jose pablo</h2></li>
+              <li><h2>santiago roque</h2></li>
+              <li><h2>matias valillas</h2></li>
+              <li><h2>juan pablo</h2></li>
+              <li><h2>josue quesada</h2></li>
+              <li><h2> segio ramires</h2></li>
+         </ol>
+
+         
+         </div>
+         <h1 class="text_li_dos">lista de ausencias</h1>
+         <ol class="lista_doS">
+            <li><h2>0</h2></li>
+            <li><h2>2</h2></li>
+            <li><h2>3</h2></li>
+            <li><h2>0</h2></li>
+            <li><h2>0</h2></li>
+            <li><h2>6</h2></li>
+            <li><h2>8</h2></li>
+            <li><h2>0</h2></li>
+            <li><h2>1</h2></li>
+            <li><h2>2</h2></li>
+       </ol>
+         
+      </div>
+
+
+      <div id="calificafiones_1">
+           <div class="calfi">
+         <Table>
+            <tr>
+               <th><h2>asisnatura</h2></th>
+               <th><h2>tareas</h2></th>
+               <th><h2>asistncia</h2></th>
+               <th><h2>trabajos</h2></th>
+               <th><h2>examenes</h2></th>
+               <th><h2> total </h2></th>
+            </tr>
+            <tr>
+               <td><h2 id="materia_asignada"></h2></td>
+               <td><h2 id="li_1">0%</h2></td>
+               <td><h2 id="li_2">0%</h2></td>
+               <td><h2 id="li_3">0%</h2></td>
+               <td><h2 id="li_4">0%</h2></td>
+               <td><h2 id="li_5">0%</h2></td>
+            </tr>
+         </Table>
+        </div>
+              
+        
+        
+
+        <div class="nom_stui">
+         <h2>Estudiante</h2>
+         <h2 id="nombre_estudiante"></h2>
+         <h2 id="reporbaste"></h2>
+        </div>
+
+         <div class="operacionnes">
+               <h2>escribe tus resultados</h2>
+               <h2>tareas</h2>
+                <input type="number" id="numeros_para_nota_1" class="escribir" placeholder="validas entre el 1 y 10">
+               <h2>asistncia</h2>
+                <input type="number" id="numeros_para_nota_2" class="escribir" placeholder="validas entre el 1 y 10">
+               <h2>trabajos</h2>
+                <input type="number" id="numeros_para_nota_3" class="escribir" placeholder="validas entre el 1 y 45">
+                <h2>examenes</h2>
+                <input type="number" id="numeros_para_nota_4" class="escribir" placeholder="validas entre el 1 y 35">
+                <br>
+                <br>
+                <h2 id="error_de_escritora"></h2>
+                <button class="btn_registro_1" onclick="datos_notas()">
+                  enviar
+                </button>
+         </div>
+
+         <div class="los_mejores">
+            <h2>los mejores estudiantes</h2>
+            <ol>
+               <li><h2 id="li_Mejor_1"></h2></li>
+               <li><h2 id="li_Mejor_2"></h2></li>
+               <li><h2 id="li_Mejor_3"></h2></li>
+            </ol>
+         </div>
+      </div>
 </div>
-
-
-
-
 <script src="app.js"></script>
+<script src="base_De_datos_AL.js"></script>
 </body>
 </html>
+
